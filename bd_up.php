@@ -22,6 +22,4 @@ else
     echo "\nErro ao criar tabela\n";
 
 
-    
-
 ?>
