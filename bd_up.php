@@ -1,10 +1,10 @@
 <?php 
 
-$banco = new SQLite3("filmes.db");
+$bd = new SQLite3("filmes.db");
 
 $sql = "DROP TABLE IF EXISTS filmes";
 
-if ($banco->exec($sql)) 
+if ($bd->exec($sql)) 
     echo "\ntabela filmes apagada\n"; 
 
 
@@ -28,7 +28,7 @@ $sql = "CREATE TABLE filmes (
         )";
 
 
-if ($banco->exec($sql)) 
+if ($bd->exec($sql)) 
 echo "\nFilme inserido com sucesso\n"; 
 else
 echo "\nErro ao inserir filmes\n";
@@ -41,7 +41,7 @@ echo "\nErro ao inserir filmes\n";
         8.9
         )";
 
-if ($banco->exec($sql)) 
+if ($bd->exec($sql)) 
     echo "\nFilme inserido com sucesso\n"; 
 else
     echo "\nErro ao inserir filmes\n";
