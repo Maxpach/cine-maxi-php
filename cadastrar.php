@@ -27,7 +27,7 @@
                         <!--Input titulo -->
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="titulo" type="text" class="validate" name="titulo">
+                                <input id="titulo" type="text" class="validate" name="titulo" required>
                                 <label for="titulo">Titulo do Filme</label>
                             </div>
                         </div>
@@ -36,7 +36,7 @@
                         <div class="row">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea id="sinopse" class="materialize-textarea"></textarea>
+                                    <textarea id="sinopse" class="materialize-textarea" name="sinopse" ></textarea>
                                     <label for="sinopse">Sinopse</label>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                         <!--Input nota -->
                         <div class="row">
                             <div class="input-field col s4">
-                                <input id="nota" type="number" step=",1" min=0 max=10 class="validate">
+                                <input id="nota" name="nota" type="number" step=",1" min=0 max=10 class="validate" required >
                                 <label for="nota">Nota</label>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                             <input type="file">
                         </div>
                         <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text">
+                            <input class="file-path validate" type="text" name="poster">
                         </div>
                     </div>
 
