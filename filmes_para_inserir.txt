@@ -1,0 +1,44 @@
+$filme1= [  "titulo"=>"Vingadores",
+            "nota"=> 8.7,
+            "sinopse"=> "Homem de Ferro, Capitão América, Hulk, Thor, Viúva Negra e Gavião Arqueiro formam o time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de lado e agir como um grupo em prol da humanidade.",
+            "poster" => "https://www.themoviedb.org/t/p/w300/qJQknP1F9R4pS5qiOuvpIUuWam4.jpg"
+];
+
+
+
+$filme2= [  "titulo"=>"Batman vs Superman",
+            "nota"=> 9.9,
+            "sinopse"=> "Temendo que as ações de um super-herói divino não tenham sido controladas, o formidável e vigoroso vigilante de Gotham City enfrenta o salvador mais reverenciado e moderno de Metrópolis, enquanto o mundo luta com o tipo de herói que realmente precisa.",
+            "poster" => "https://www.themoviedb.org/t/p/w300/doiUtOHzcxXFl0GVQ2n8Ay6Pirx.jpg"
+];
+
+
+
+$filme3= [  "titulo"=>"O Incrível Hulk",
+            "nota"=> 10,
+            "sinopse"=> "Vivendo escondido e longe de Betty Ross, a mulher que ama, o cientista Bruce Banner busca um meio de retirar a radiação gama que está em seu sangue. ",
+            "poster" => "https://www.themoviedb.org/t/p/w300/jPu8yiadqgzwFPGKJmGo637ASVP.jpg"
+];
+
+
+
+$filme4= [  "titulo"=>"O Espetacular Homem-Aranha",
+            "nota"=> 8.0,
+            "sinopse"=> "Peter Parker está tentando saber mais sobre sua origem. Ele encontra uma pasta que pertenceu ao seu pai e quer descobrir por que seus pais desapareceram. ",
+            "poster" => "https://www.themoviedb.org/t/p/original/sLWUtbrpiLp23a0XDSiUiltdFPJ.jpg"
+];
+
+
+
+$filme5= [  "titulo"=>"Os Mercenários 2",
+            "nota"=> 8.8,
+            "sinopse"=> "O grupo de mercenários se unem para evitar que um criminoso roube uma grande quantidade de plutônio, que possibilitaria a produção de armas nucleares. ",
+            "poster" => "https://www.themoviedb.org/t/p/w300/ihKsZZYMbyHXC1L7s90WDLITdC5.jpg"
+];
+
+
+$filme6= [  "titulo"=>"Batman",
+            "nota"=> 7,0,
+            "sinopse"=> "Bruce Wayne é um jovem bilionário da cidade de Gotham City, Nova Jersey, que também age secretamente como o vigilante noturno Batman após o assassinato dos seus pais.",
+            "poster" => "https://www.themoviedb.org/t/p/w300/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg"
+];

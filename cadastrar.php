@@ -18,7 +18,7 @@
     </nav>
 
     <div class="row">
-        <form action="inserirFilme.php">
+        <form action="inserirFilme.php" method="POST">
             <div class="col s6 offset-s3">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
@@ -45,7 +45,7 @@
                         <!--Input nota -->
                         <div class="row">
                             <div class="input-field col s4">
-                                <input id="nota" name="nota" type="number" step=",1" min=0 max=10 class="validate" required >
+                                <input id="nota" name="nota" type="number" step=".1" min=0 max=10 class="validate" required >
                                 <label for="nota">Nota</label>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
 
                     <!--Input capa -->
                     <div class="file-field input-field ">
-                        <div class="btn amber lighten-1 black-text">
+                        <div class="btn amber lighten-2 black-text">
                             <span>Capa</span>
                             <input type="file">
                         </div>
