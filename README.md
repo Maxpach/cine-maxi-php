@@ -8,7 +8,7 @@ Projeto inspirado para criar uma página a onde tem o uso da linguagem PHP, HTML
 A intenção é criar uma aplicação na qual mostra um site de filmes simples e completo, envolvendo até mesmo banco de dados, para cadastro.
 
 # Porque estou usando framework?
-Bom, usei o materialize css, além de acessar alguns arquivos com google image para icones, e imagens inceridas no TMDB Filmes.
+Bom, usei o materialize css, além de acessar alguns arquivos com google image para icones, e imagens inseridas no TMDB Filmes.
 O uso do materialize foi para que o meu processo de criação, fosse mais rápido, e para que eu não gastasse tempo com a estilização das divs, e com o projeto em geral.
 Foi uma mão na roda, já que o VS Code tem alguns atalhos para gerar alguns arquivos, usando a extenção materialize.
 
@@ -23,3 +23,5 @@ Foi uma mão na roda, já que o VS Code tem alguns atalhos para gerar alguns arq
 \
 Meu projeto?! Eu inventei do zero?!\
 Não, a ideia é um projeto real do youtuber : João Carlos Lima e Silva
+
+Me ajudou muito a entender cada vez mais o php, espero que te ajude também.
