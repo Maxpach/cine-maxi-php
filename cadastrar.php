@@ -8,8 +8,8 @@
     <nav class="nav-extended blue-grey lighten-2">
         <div class="nav-wrapper">
             <ul id="nav-mobile" class="right">
-                <li><a href="galeria.php">Galeria</a></li>
-                <li><a href="cadastrar.php">Cadastrar</a></li>
+                <li><a href="/">Galeria</a></li>
+                <li><a href="/novo">Cadastrar</a></li>
             </ul>
         </div>
         <div class="nav-header center ">
@@ -18,7 +18,7 @@
     </nav>
 
     <div class="row">
-        <form action="inserirFilme.php" method="POST">
+        <form method="POST">
             <div class="col s6 offset-s3">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
@@ -64,7 +64,7 @@
 
                     <!--button voltar -->
                     <div class="card-action">
-                        <a class="btn waves-effect waves-light btn grey" href="galeria.php">Cancelar</a>
+                        <a class="btn waves-effect waves-light btn grey" href="/">Cancelar</a>
                         <button type="submit" href="#" class="waves-effect waves-light btn amber darken">Confirmar</button>
                     </div>
                 </div>

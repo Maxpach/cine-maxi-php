@@ -14,5 +14,5 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Maximiliano</title>
+    <title>CineMax</title>
 
