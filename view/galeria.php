@@ -3,15 +3,12 @@
 
 <?php
 /*Faz a busca dos dados*/
-session_start();
 
-require "./repository/FilmesRepositoryPDO.php";
+session_start();
 require "./util/Mensagem.php";
 
-
-$filmesRepository = new FilmesRepositoryPDO();
-$filmes = $filmesRepository->listarTodos();
-
+$controller = new FilmesController();
+$filmes = $controller->index();
 ?>
 
 

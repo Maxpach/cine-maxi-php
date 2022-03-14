@@ -1,7 +1,7 @@
 <?php
 
-require "Conexao.php";
-require "./bd_up.php";
+require "./repository/Conexao.php";
+require "./db/bd_up.php";
 
 class FilmesRepositoryPDO{
 
