@@ -3,14 +3,16 @@
 $rota = $_SERVER["REQUEST_URI"];
 $metodo = $_SERVER["REQUEST_METHOD"];
 
-require "./controller/FilmesController.php";
+require_once "./controller/FilmesController.php";
 
 switch($rota){
     case "/":
-        require "./view/galeria.php";
+        require_once "./view/galeria.php";
         break;
     case "/novo":
-        if($metodo == "GET") require "./controller/FilmesController.php";
+        require_once "./view/cadastrar.php";
+        
+        if($metodo == "GET") require_once "controller/FilmesController.php";
         if($metodo == "POST") {
             $controller = new FilmesController();
             $controller->save($_REQUEST);

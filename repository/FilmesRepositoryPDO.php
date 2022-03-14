@@ -1,7 +1,7 @@
 <?php
 
-require "./repository/Conexao.php";
-require "./db/bd_up.php";
+require_once "Conexao.php";
+require_once "./db/20220301_create_table_filmes.php";
 
 class FilmesRepositoryPDO{
 
@@ -10,6 +10,7 @@ class FilmesRepositoryPDO{
     public function __construct(){
         $this->conexao = Conexao::criar();
     }
+
     public function listarTodos():array{
         $filmesLista = array();
 

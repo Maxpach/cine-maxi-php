@@ -1,8 +1,8 @@
 <?php
 
-session_start();
-require "./repository/FilmesRepositoryPDO.php";
-require "./model/Filme.php";
+//session_start();
+require_once "./repository/FilmesRepositoryPDO.php";
+require_once "./model/Filme.php";
 
 class FilmesController{
     public function index(){
@@ -20,7 +20,7 @@ class FilmesController{
 
         if(gettype($upload)=="string"){
             $filme->poster = $upload;
-        };
+        }
 
         if ($filmesRepository->salvar($filme)) 
             $_SESSION["msg"] = "Filme cadastrado com sucesso";

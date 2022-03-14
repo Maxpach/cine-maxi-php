@@ -3,9 +3,10 @@
 
 <?php
 /*Faz a busca dos dados*/
+//session_start();
 
-session_start();
-require "./util/Mensagem.php";
+require_once "./util/Mensagem.php";
+
 
 $controller = new FilmesController();
 $filmes = $controller->index();
@@ -67,7 +68,7 @@ $filmes = $controller->index();
     
     <script>
         document.querySelectorALL(".btn-fav").forEach(btn => {
-            console.log(btn);
+            console.log(btn); 
         });
     </script>
 
