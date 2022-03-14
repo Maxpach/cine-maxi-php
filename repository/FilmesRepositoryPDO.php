@@ -21,7 +21,7 @@ class FilmesRepositoryPDO{
         return $filmesLista;
     }
 
-    public function salvar(filme $filme):bool{       
+    public function salvar($filme):bool{       
 
         $sql = "INSERT INTO filmes (titulo, sinopse, nota, poster) 
         VALUES (:titulo, :sinopse, :nota, :poster)";

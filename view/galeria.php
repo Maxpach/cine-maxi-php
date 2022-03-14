@@ -45,8 +45,9 @@ $filmes = $controller->index();
                 <div class="card hoverable">
                     <div class="card-image">
                         <img src="<?= $filme->poster ?>">
-                        <a class="btn-floating halfway-fab waves-effect waves-light red">
-                            <i class="material-icons">favorite_border</i></a>
+                        <button class="btn-fav btn-floating halfway-fab waves-effect waves-light red">
+                            <i class="material-icons">favorite</i>
+                        </button>
                     </div>
                     <div class="card-content">
                         <p class="valign-wrapper">                 
@@ -62,7 +63,13 @@ $filmes = $controller->index();
     </div>
     <!--Botão
     <a href="#" class="waves-effect waves-light btn">Button</a>-->
-    <?=Mensagem::mostrar(); ?>            
+    <?=Mensagem::mostrar(); ?>      
+    
+    <script>
+        document.querySelectorALL(".btn-fav").forEach(btn => {
+            console.log(btn);
+        });
+    </script>
 
 </body>
 

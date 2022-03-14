@@ -14,7 +14,7 @@ $sql = "CREATE TABLE filmes (
         poster VARCHAR(200),
         sinopse TEXT,
         nota DECIMAL(2,1) 
-)";
+";
 
 if ($bd->exec($sql)) 
     echo "\nSucesso tabela criada\n";

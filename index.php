@@ -10,7 +10,7 @@ switch($rota){
         require "./view/galeria.php";
         break;
     case "/novo":
-        if($metodo == "GET") require "./cadastrar.php";
+        if($metodo == "GET") require "./controller/FilmesController.php";
         if($metodo == "POST") {
             $controller = new FilmesController();
             $controller->save($_REQUEST);
