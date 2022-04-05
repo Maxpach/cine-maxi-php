@@ -5,20 +5,28 @@ $metodo = $_SERVER["REQUEST_METHOD"];
 
 require_once "./controller/FilmesController.php";
 
-switch($rota){
-    case "/":
-        require_once "./view/galeria.php";
-        break;
-    case "/novo":
-        require_once "./view/cadastrar.php";
+if ($rota === "/"){
+    require_once "./view/galeria.php";
+    exit();
+}
+
+if ($rota === "/novo"){
+    if($metodo == "GET") require_once "view/cadastrar.php";
+    if($metodo == "POST") {
+        $controller = new FilmesController();
+        $controller->save($_REQUEST);
+    };
+        exit();
+
+}
         
-        if($metodo == "GET") require_once "controller/FilmesController.php";
-        if($metodo == "POST") {
-            $controller = new FilmesController();
-            $controller->save($_REQUEST);
-        }
-        break;
-    default:
-        require "./view/404.php";
-        break;
-} 
+if (substr($rota, 0, strlen("/favoritar")) === "/favoritar"){
+    $controller = new FilmesController();
+    $controller->favorite(basename($rota));
+    exit();
+
+}
+
+ require "./view/404.php";
+
+ 

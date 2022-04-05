@@ -7,4 +7,4 @@ $sql = "ALTER TABLE filmes ADD COLUMN favorito INT DEFAULT 0";
 if ($bd->exec($sql)) 
     echo "\nTabela filmes alterada com sucesso\n"; 
 else
-echo "\nerro ao alterar tabela filmes\n";  
+    echo "\nerro ao alterar tabela filmes\n";  
