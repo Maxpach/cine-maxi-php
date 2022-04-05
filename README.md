@@ -25,3 +25,8 @@ Meu projeto?! Eu inventei do zero?!\
 Não, a ideia é um projeto real do youtuber : João Carlos Lima e Silva
 
 Me ajudou muito a entender cada vez mais o php, espero que te ajude também.
+
+![image](https://user-images.githubusercontent.com/32625973/161860162-252412a7-4bfa-4b15-a2a3-4755ab58bddd.png)
+
+
+![image](https://user-images.githubusercontent.com/32625973/161860188-ef5964c7-5be8-406c-8c65-342c11a8e30b.png)
