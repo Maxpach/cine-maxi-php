@@ -56,7 +56,9 @@ $filmes = $controller->index();
                         </p>
                         <span class="card-title"> <?= $filme->titulo ?> </span>
                         <p><?= $filme->sinopse ?></p>
+                        <button class="waves-effect waves-light btn-small rigth red accent-2 btn-delete" data-id="<?= $filme->id ?>"><i class="material-icons">delete</i></button>
                     </div>
+
                 </div>
             </div>
             <?php endforeach ?>
@@ -83,6 +85,27 @@ $filmes = $controller->index();
                 })
                 .catch( erro => {
                     M.toast({html: 'Erro ao favoritar'})
+                })
+                
+            });
+        });
+
+
+        document.querySelectorAll(".btn-delete").forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                const id = btn.getAttribute("data-id")
+                const requestConfig = { method: "DELETE", header: new Headers()}
+                fetch(`/filmes/${id}`, requestConfig)
+                .then(response => response.json())
+                .then(response => {
+                    if(response.success === "ok"){
+                        const card = btn.closest(".col")
+                        card.classList.add("fadeOut")
+                        setTimeout(() => card.remove(), 1000)
+                        }
+                    })
+                    .catch( erro => {
+                        M.toast({html: 'Erro ao apagar'})
                 })
                 
             });

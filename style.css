@@ -1,19 +1,24 @@
-bory{
+bory {
     background-color: #beb8b8;
 }
 
-.nav-extended{
+.nav-extended {
     background-image: url("img/padrao.jpg");
     background-size: cover;
     background-blend-mode: soft-light;
 }
 
-nav ul li.active, .tab a.active{
+nav ul li.active,
+.tab a.active {
     border-bottom: solid 2px rgb(255, 230, 0);
     background-color: transparent;
 }
 
-
-.nav-header h1{
+.nav-header h1 {
     text-shadow: 2px 2px 8px #000000;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: 1s;
 }
